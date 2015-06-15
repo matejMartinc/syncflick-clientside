@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:minHeight="120dip"
+    android:layout_height="120dip"
+    android:layout_marginTop="6dip"
+    android:layout_marginBottom="6dip"
+    android:layout_marginRight="6dip"
+    android:layout_marginLeft="20dip">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/myVideoLayout"
+        android:layout_width="140dip"
+        android:layout_height="110dip"
+        android:layout_marginRight="6dip"
+        android:background="@drawable/border">
+
+        <VideoView
+            android:id="@+id/myVideo"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentRight="true"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+
+            android:visibility="invisible">
+        </VideoView>
+
+        <ImageView
+            android:id="@+id/myImage"
+            android:layout_alignParentRight="true"
+            android:scaleType="fitXY"
+            android:gravity="right|center_vertical"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+        </ImageView>
+
+        <ImageButton android:id="@+id/play"
+            style="@android:style/MediaButton.Play"
+            android:layout_centerInParent="true"
+        />
+
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/firstLine"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_toRightOf="@id/myVideoLayout"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Description"
+        android:textSize="17sp"
+        android:layout_marginTop="6dip"
+        android:textColor="#120f58"
+    />
+
+    <TextView
+        android:id="@+id/secondLine"
+        android:layout_width="fill_parent"
+        android:layout_height="26dip"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/firstLine"
+        android:layout_toRightOf="@id/myVideoLayout"
+        android:ellipsize="marquee"
+        android:singleLine="true"
+        android:text="Description"
+        android:textSize="12sp"
+        android:layout_marginBottom="30dip"
+        android:textColor="#120f58"/>
+
+</RelativeLayout>

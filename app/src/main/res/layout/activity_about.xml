@@ -1,0 +1,33 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    tools:context="mmdevelopment.synchronizer.About">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:scrollbars="vertical"
+        android:fillViewport="true">
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+        <TextView android:text="HOW TO USE IT\n\nSyncflick is very intuitive and simple. You can preview the video you want to dub by clicking on it in a video list. Clicking on video title, description or at least anywhere near the video you would like to dub, will take you to the next activity, where you just press start when you are ready for dubbing. After the video has ended you will be taken to the next activity, where you can review you dubbed video, save it to a gallery or share it on Facebook if you are happy with the dubbing, or you can also redo the dubbing. By clicking back you will get back to the list of videos."
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/howto"
+            android:layout_marginBottom="20px"/>
+
+        <TextView android:text="FAIR USE NOTICE\n\nThis app contains copyrighted material the use of which has not always been specifically authorized by the copyright owner. We are making such material available in our efforts to advance cultural production. We believe that copying of copyrighted material done for a limited and “transformative” purpose, such as parody or satire of copyrighted work constitutes 'fair use'. The material in this app is distributed without profit to those who have expressed a prior interest in creating parodies and satires for entertainment purposes. We do not own any videos in this app and if you feel your copyrights have been infringed please contact us and the content in question will be taken of the server."
+            android:id="@+id/fairuse"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/howto"/>
+
+        </RelativeLayout>
+    </ScrollView>
+
+</RelativeLayout>
